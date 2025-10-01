@@ -72,12 +72,34 @@ input[type="password"] {
 }
 
 .illustration {
-    margin-top: 20px;
+    position: absolute;
+    top: 0;
+    right: -250px;
 }
 
 .illustration img {
     width: 200px;
     max-width: 100%;
+    display: block;
+}
+.corazon-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 70px;
+    height: 70px;
+    background-color: #007bff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.corazon-container img {
+    width: 40px;
+    height: 40px;
+    filter: brightness(0) invert(1); /* Hace que el corazón sea blanco */
 }
 
 
