@@ -80,26 +80,26 @@ input[type="password"] {
     max-width: 100%;
 }
 
-/* Ajustes para centrar el formulario y alinear "Recordarme" */
+
 #loginForm {
-    width: 300px; /* Ancho fijo para centrar */
-    margin: 0 auto; /* Centra el formulario */
+    width: 300px; 
+    margin: 0 auto; 
 }
 
 .form-group.remember {
-    display: flex; /* Usa flexbox para alinear en línea */
-    align-items: center; /* Centra verticalmente el checkbox y el label */
-    justify-content: flex-start; /* Alinea a la izquierda */
-    margin-bottom: 15px; /* Espacio antes del botón */
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start; 
+    margin-bottom: 15px;
 }
 
 .form-group.remember input[type="checkbox"] {
-    width: auto; /* Restaura el ancho automático para el checkbox */
-    margin-right: 10px; /* Espacio entre checkbox y label */
-    margin-bottom: 0; /* Elimina margen inferior */
+    width: auto; 
+    margin-right: 10px; 
+    margin-bottom: 0; 
 }
 
 .form-group.remember label {
-    margin: 0; /* Elimina márgenes del label */
-    display: inline; /* Asegura que el label esté en línea */
+    margin: 0; 
+    display: inline;
 }
