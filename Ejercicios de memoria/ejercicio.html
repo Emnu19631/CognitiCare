@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Memoria</title>
+    <link rel="stylesheet" href="ejercicio.css">
+</head>
+<body>
+    <div class="container_superior">
+        <ul class="top">
+            <img src="../Imagenes/corazon.png" class="corazon-box" alt="Corazón" width="50" height="50">
+            <li><a href="#">CogniCare</a></li>
+            <li><a href="../Pantalla_principal/pantalla_prin.html">Inicio</a></li>
+            <li><a href="#">Chequeo</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Novedades</a></li>
+            <li><a href="#">Contactos</a></li>
+            <img src="../Imagenes/Abuelas.webp" class="illustration" alt="Abuelas">
+        </ul>
+    </div>
+    <h1>Juego de Memoria</h1>
+    <div class="game-container">
+        <div id="game-info">
+            <p>Intentos: <span id="attempts">0</span></p>
+            <p>Tiempo: <span id="timer">00:00</span></p>
+        </div>
+        <div id="game-board" class="game-board"></div>
+        <button id="reset-button" class="hidden">Reiniciar</button>
+    </div>
+    <script src="ejercicio.js"></script>
+</body>
+</html>
