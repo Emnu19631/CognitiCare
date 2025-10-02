@@ -74,7 +74,7 @@ li {
 
 .bottom li {
     display: flex;
-    align-items: center; /* Alinea la imagen y el texto */
+    align-items: center;
     justify-content: center;
     padding: 20px;
     border: 1px solid #ccc;
@@ -87,7 +87,7 @@ li {
 }
 
 .bottom li img {
-    margin-right: 10%; /* Espacio entre la imagen y el texto */
+    margin-right: 10%;
     width: 20%;
     height: auto;
 }
@@ -96,7 +96,7 @@ li {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    display: flex; /* Para que el texto se acomode a la imagen */
+    display: flex;
     align-items: center;
     font-size: 16px;
     text-align: center;
