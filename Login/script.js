@@ -6,6 +6,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
     if (email && password) {
         alert(`Inicio de sesión exitoso!\nEmail: ${email}\nContraseña: ${password}\nRecordarme: ${remember}`);
+        window.location.href = '../Pantalla_principal/pantalla_prin.html';
     } else {
         alert('Por favor, completa todos los campos.');
     }
