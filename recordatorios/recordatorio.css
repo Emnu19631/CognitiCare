@@ -1,4 +1,9 @@
-
+/* Fuente global */
+body {
+    font-family: Arial, sans-serif; /* 👈 aquí defines la fuente de todo */
+    margin: 0;
+    padding: 0;
+}
 .container_superior {
     font-family: Arial, sans-serif;
     width: 100%;
@@ -20,7 +25,6 @@ ul {
 }
 
 .top {
-       font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     justify-content: space-between;
