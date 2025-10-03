@@ -7,26 +7,26 @@
 </head>
 <body>
   <div class="container">
-    <!-- Encabezado -->
+
     <div class="header">
       <img src="../Imagenes/corazon.png" class="logo" alt="Corazón">
       <a href="../Pantalla_principal/pantalla_prin.html" class="title">CognitiCare</a>
     </div>
 
-    <!-- Pregunta 1 (cambiada) -->
-    <div class="question-box" data-question="1" data-correct="París">
-      <div class="question">¿Cuál es la capital de Francia?</div>
+
+    <div class="question-box" data-question="1" data-correct="15">
+      <div class="question">Si tienes 10 manzanas y te regalan 5 más, ¿cuántas tienes en total?</div>
       <div class="options">
-        <button onclick="saveAnswer(1, 'Madrid')">Madrid</button>
-        <button onclick="saveAnswer(1, 'Roma')">Roma</button>
-        <button onclick="saveAnswer(1, 'París')">París</button>
-        <button onclick="saveAnswer(1, 'Berlín')">Berlín</button>
+        <button onclick="saveAnswer(1, '12')">12</button>
+        <button onclick="saveAnswer(1, '13')">13</button>
+        <button onclick="saveAnswer(1, '14')">14</button>
+        <button onclick="saveAnswer(1, '15')">15</button>
       </div>
     </div>
 
-    <!-- Pregunta 2 -->
+
     <div class="question-box" data-question="2" data-correct="Miércoles o jueves">
-      <div class="question">¿Qué día de la semana es hoy si estamos a mitad de semana?</div>
+      <div class="question">¿Qué día de la semana es hoy si ayer fue martes?</div>
       <div class="options">
         <button onclick="saveAnswer(2, 'Lunes o martes')">Lunes o martes</button>
         <button onclick="saveAnswer(2, 'Miércoles o jueves')">Miércoles o jueves</button>
@@ -35,7 +35,7 @@
       </div>
     </div>
 
-    <!-- Pregunta 3 -->
+
     <div class="question-box" data-question="3" data-correct="14">
       <div class="question">Si empieza desde el número 20 y cuenta hacia atrás de 2 en 2, ¿qué número sigue después de 16?</div>
       <div class="options">
@@ -46,9 +46,9 @@
       </div>
     </div>
 
-    <!-- Pregunta 4 -->
+
     <div class="question-box" data-question="4" data-correct="Octubre - Diciembre">
-      <div class="question">¿En qué trimestre estamos si el mes es noviembre?</div>
+      <div class="question">¿En qué mes estamos ahora? (supón que es octubre)</div>
       <div class="options">
         <button onclick="saveAnswer(4, 'Enero - Marzo')">Enero - Marzo</button>
         <button onclick="saveAnswer(4, 'Abril - Junio')">Abril - Junio</button>
@@ -57,9 +57,9 @@
       </div>
     </div>
 
-    <!-- Pregunta 5 -->
-    <div class="question-box" data-question="5" data-correct="En un hospital">
-      <div class="question">¿Dónde se encuentra si está recibiendo atención médica?</div>
+
+    <div class="question-box" data-question="5" data-correct="En mi casa">
+      <div class="question">¿En qué lugar se encuentra ahora si está usando su computadora personal?</div>
       <div class="options">
         <button onclick="saveAnswer(5, 'En mi casa')">En mi casa</button>
         <button onclick="saveAnswer(5, 'En un hospital')">En un hospital</button>
@@ -68,7 +68,61 @@
       </div>
     </div>
 
-    <!-- Botón para mostrar resultados -->
+
+    <div class="question-box" data-question="6" data-correct="10">
+      <div class="question">Le voy a decir un número: 7. Súmele 3, ¿cuál es el resultado?</div>
+      <div class="options">
+        <button onclick="saveAnswer(6, '8')">8</button>
+        <button onclick="saveAnswer(6, '9')">9</button>
+        <button onclick="saveAnswer(6, '10')">10</button>
+        <button onclick="saveAnswer(6, '11')">11</button>
+      </div>
+    </div>
+
+
+    <div class="question-box" data-question="7" data-correct="12:00 pm">
+      <div class="question">Si son las 10 de la mañana ahora, ¿qué hora será dentro de 2 horas?</div>
+      <div class="options">
+        <button onclick="saveAnswer(7, '11:00 am')">11:00 am</button>
+        <button onclick="saveAnswer(7, '12:00 pm')">12:00 pm</button>
+        <button onclick="saveAnswer(7, '1:00 pm')">1:00 pm</button>
+        <button onclick="saveAnswer(7, 'No sé')">No sé</button>
+      </div>
+    </div>
+
+
+    <div class="question-box" data-question="8" data-correct="Pájaro">
+      <div class="question">¿Cuál de estos animales puede volar?</div>
+      <div class="options">
+        <button onclick="saveAnswer(8, 'Perro')">Perro</button>
+        <button onclick="saveAnswer(8, 'Gato')">Gato</button>
+        <button onclick="saveAnswer(8, 'Pájaro')">Pájaro</button>
+        <button onclick="saveAnswer(8, 'Caballo')">Caballo</button>
+      </div>
+    </div>
+
+
+    <div class="question-box" data-question="9" data-correct="Invierno">
+      <div class="question">¿Qué estación del año hace más frío?</div>
+      <div class="options">
+        <button onclick="saveAnswer(9, 'Verano')">Verano</button>
+        <button onclick="saveAnswer(9, 'Otoño')">Otoño</button>
+        <button onclick="saveAnswer(9, 'Invierno')">Invierno</button>
+        <button onclick="saveAnswer(9, 'Primavera')">Primavera</button>
+      </div>
+    </div>
+
+
+    <div class="question-box" data-question="10" data-correct="Martes">
+      <div class="question">Si hoy es lunes, ¿qué día será mañana?</div>
+      <div class="options">
+        <button onclick="saveAnswer(10, 'Martes')">Martes</button>
+        <button onclick="saveAnswer(10, 'Miércoles')">Miércoles</button>
+        <button onclick="saveAnswer(10, 'Domingo')">Domingo</button>
+        <button onclick="saveAnswer(10, 'Viernes')">Viernes</button>
+      </div>
+    </div>
+
     <div class="result-box">
       <button onclick="showResults()">Finalizar y ver respuestas</button>
       <div id="results"></div>

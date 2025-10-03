@@ -1,25 +1,21 @@
-// Objeto para almacenar las respuestas
 let answers = {};
 
 function saveAnswer(question, answer) {
   const box = document.querySelector(`.question-box[data-question="${question}"]`);
   const buttons = box.querySelectorAll("button");
 
-  // Quitar selección previa
+
   buttons.forEach(btn => btn.classList.remove("selected"));
 
-  // Marcar el clickeado
+
   const clickedBtn = [...buttons].find(b => b.innerText === answer);
   clickedBtn.classList.add("selected");
 
-  // Guardar respuesta
   answers[question] = answer;
 
-  // Marca la pregunta como contestada
   box.classList.add("answered");
 }
 
-// Mostrar resultados con formato amigable
 function showResults() {
   const resultsDiv = document.getElementById("results");
   resultsDiv.style.display = "block"; // ✅ ahora sí se muestra al dar click
@@ -32,7 +28,6 @@ function showResults() {
 
   let score = 0;
 
-  // tabla formal
   let tableHTML = `
     <table style="width:100%; border-collapse:collapse; margin-top:10px;">
       <thead>
@@ -64,7 +59,6 @@ function showResults() {
 
   resultsDiv.innerHTML += tableHTML;
 
-  // puntaje final
   resultsDiv.innerHTML += `
     <div style="margin-top:20px; padding:10px; background:#3E7775; color:#fff; border-radius:8px; text-align:center;">
       <strong>Puntaje final: ${score} / 10</strong>
