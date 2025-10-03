@@ -1,5 +1,6 @@
 
 .container_superior {
+    font-family: Arial, sans-serif;
     width: 100%;
     position: fixed;
     top: 0;
@@ -78,6 +79,7 @@ li {
 }
 
 .historial_recordatorios {
+    font-family: Arial, sans-serif;
     margin-top: 10%;
     text-align: center;
 }
@@ -99,6 +101,7 @@ li {
 
 
 .Agregar_recordatorio {
+    font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,6 +116,7 @@ li {
     background-color: #007bff;
 }
 .Agregar_recordatorio form {
+    font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,6 +129,7 @@ li {
 .Agregar_recordatorio input, 
 .Agregar_recordatorio select, 
 .Agregar_recordatorio textarea {
+    font-family: Arial, sans-serif;
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -135,6 +140,7 @@ li {
 }
 
 .Agregar_recordatorio button {
+    font-family: Arial, sans-serif;
     background-color: #3E7775;
     color: white;
     border: none;

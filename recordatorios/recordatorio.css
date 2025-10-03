@@ -1,5 +1,6 @@
 
 .container_superior {
+    font-family: Arial, sans-serif;
     width: 100%;
     position: fixed;
     top: 0;
@@ -19,6 +20,7 @@ ul {
 }
 
 .top {
+       font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     justify-content: space-between;
