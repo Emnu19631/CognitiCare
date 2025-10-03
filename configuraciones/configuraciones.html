@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuraciones - CogniCare</title>
+    <link rel="stylesheet" href="configuraciones.css">
+    <script src="configuraciones.js" defer></script>
+</head>
+<body>
+
+    <div class="container_superior">
+        <ul class="top">
+            <img src="../Imagenes/corazon.png" class="corazon-box" alt="Corazón" width="50" height="50">
+            <li><a href="#">CogniCare</a></li>
+            <li><a href="../Pantalla_principal/pantalla_prin.html">Inicio</a></li>
+            <li><a href="#">Chequeo</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Novedades</a></li>
+            <li><a href="#">Contactos</a></li>
+            <img src="../Imagenes/Abuelas.webp" class="illustration" alt="Abuelas">
+        </ul>
+    </div>
+
+    <div class="configuraciones">
+        <h2>Configuraciones de Perfil</h2>
+
+        <!-- Ver perfil -->
+        <div class="perfil-info">
+            <h3>Tu Perfil</h3>
+            <img id="profilePic" src="../Imagenes/Persona.svg" alt="Avatar" width="100" height="100">
+            <p><strong>Nombre</strong> <span id="profileName">Juan Pérez</span></p>
+            <p><strong>Correo</strong> <span id="profileEmail">juan@example.com</span></p>
+            <button id="editProfileButton">Editar Perfil</button>
+        </div>
+
+        <!-- Formulario de edición -->
+        <div id="editProfileForm" class="hidden">
+            <h3>Editar Perfil</h3>
+            <label for="editName">Nombre</label>
+            <input type="text" id="editName" value="Juan Pérez">
+
+            <label for="editEmail">Correo</label>
+            <input type="email" id="editEmail" value="juan@example.com">
+
+            <label for="editProfilePic">Foto de perfil</label>
+            <input type="file" id="editProfilePic" accept="image/*">
+
+            <button id="saveProfileButton">Guardar Cambios</button>
+            <button id="cancelEditButton">Cancelar</button>
+        </div>
+    </div>
+</body>
