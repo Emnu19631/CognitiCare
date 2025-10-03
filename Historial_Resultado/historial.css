@@ -149,3 +149,18 @@ a:hover {
   background: #4caf50;
   color: white;
 }
+
+.grafico {
+  flex: 2.5;          /* darle más espacio que antes */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grafico canvas {
+  max-width: 100%;
+  max-height: 100%;
+  width: 650px;        /* ancho fijo mayor */
+  height: 350px;       /* alto fijo mayor */
+}
