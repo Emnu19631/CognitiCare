@@ -1,0 +1,155 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+}
+
+.container_superior {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 1000;
+  padding: 10px 0;
+  justify-content: center;
+  display: flex;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  font-size: 18px;
+  padding: 0 20px;
+}
+
+li {
+  padding: 10px;
+  text-align: center;
+}
+
+.top li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.top li a:hover {
+  color: #007bff;
+}
+
+.corazon-box {
+  background-color: #007bff;
+  padding: 1px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  margin-left: 10px;
+}
+
+.illustration {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 7%;
+  width: 100%;
+}
+
+.contact-container {
+  margin: 150px auto 40px auto; 
+  max-width: 600px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid #007bff;
+}
+
+.contact-container h2 {
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  text-align: left;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #0056b3;
+}
+
+.info-container {
+  margin: 30px auto 50px auto;
+  max-width: 600px;
+  padding: 20px;
+  background: #ffffff;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.info-container h3 {
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.info-container p {
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.info-container a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.info-container a:hover {
+  text-decoration: underline;
+}
