@@ -1,0 +1,151 @@
+/* ======== RESET GENERAL ======== */
+html, body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  padding-top: 100px; /* espacio para el header fijo */
+}
+
+/* ======== HEADER SUPERIOR ======== */
+.container_superior {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 1000;
+  padding: 10px 0;
+  justify-content: center;
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  font-size: 18px;
+  padding: 0 20px;
+}
+
+li {
+  padding: 10px;
+  text-align: center;
+}
+
+.top li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+a:hover {
+  color: #007bff;
+}
+
+.top li {
+  font-size: 16px;
+}
+
+.corazon-box {
+  background-color: #007bff;
+  padding: 1px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  margin-left: 10px;
+}
+
+.corazon-box img {
+  width: 45px;
+  height: auto;
+}
+
+.illustration {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 7%;
+  width: 100%;
+}
+
+.illustration img {
+  width: 100%;
+  height: auto;
+}
+
+/* ======== CONTENEDOR PRINCIPAL (GRÁFICAS + RESULTADOS) ======== */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px; /* un poco más de aire debajo del header */
+  min-height: calc(100vh - 140px);
+}
+
+.card {
+  background: #2979ff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 900px;
+  height: 500px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.card-content {
+  display: flex;
+  flex: 1;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.grafico {
+  flex: 2;
+  padding: 10px;
+}
+
+.resultados {
+  flex: 1;
+  padding: 20px;
+  background: #e3f2fd;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.resultados h3 {
+  margin-top: 0;
+}
+
+.badge {
+  display: inline-block;
+  background: #ddd;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.green {
+  background: #4caf50;
+  color: white;
+}
