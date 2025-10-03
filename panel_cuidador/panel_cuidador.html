@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recordatorios</title>
+    <link rel="stylesheet" href="panel_cuidador.css">
+</head>
+<body>
+    <div class="container_superior">
+        <ul class="top">
+            <img src="../Imagenes/corazon.png" class="corazon-box" alt="Corazón" width="50" height="50">
+            <li><a href="#">CogniCare</a></li>
+            <li><a href="../Pantalla_principal/pantalla_prin.html">Inicio</a></li>
+            <li><a href="#">Chequeo</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Novedades</a></li>
+            <li><a href="#">Contactos</a></li>
+            <img src="../Imagenes/Abuelas.webp" class="illustration" alt="Abuelas">
+        </ul>
+    </div>
+    <div class="historial_recordatorios">
+        <h1>Historial de Recordatorios</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Descripción</th>
+                    <th>Fecha y Hora</th>
+                </tr>
+            </thead>
+            <tbody id="recordatorioTableBody">
+                
+            </tbody>
+        </table>
+    </div>
+    <h2 class="agrerecord">Agregar nuevo recordatorio</h2>
+    <div class="Agregar_recordatorio">
+        <form id="recordatorioForm">
+            <label for="titulo">Título</label>
+            <input type="text" id="titulo" name="titulo" required>
+            
+            <label for="descripcion">Descripción</label>
+            <textarea id="descripcion" name="descripcion" required></textarea>
+            
+            <label for="fecha">Fecha y hora </label>
+            <input type="datetime-local" id="fecha" name="fecha" required>
+            
+            <button type="submit">Agregar Recordatorio</button>
+        </form>
+    </div>
+
+    <script src="panel_cuidador.js"></script>
+</body>
+</html>
