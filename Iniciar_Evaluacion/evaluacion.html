@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CognitiCare - Evaluación</title>
+  <link rel="stylesheet" href="evaluacion.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Encabezado -->
+    <div class="header">
+      <img src="../Imagenes/corazon.png" class="logo" alt="Corazón">
+      <a href="../Pantalla_principal/pantalla_prin.html" class="title">CognitiCare</a>
+    </div>
+
+    <!-- Pregunta 1 (cambiada) -->
+    <div class="question-box" data-question="1" data-correct="París">
+      <div class="question">¿Cuál es la capital de Francia?</div>
+      <div class="options">
+        <button onclick="saveAnswer(1, 'Madrid')">Madrid</button>
+        <button onclick="saveAnswer(1, 'Roma')">Roma</button>
+        <button onclick="saveAnswer(1, 'París')">París</button>
+        <button onclick="saveAnswer(1, 'Berlín')">Berlín</button>
+      </div>
+    </div>
+
+    <!-- Pregunta 2 -->
+    <div class="question-box" data-question="2" data-correct="Miércoles o jueves">
+      <div class="question">¿Qué día de la semana es hoy si estamos a mitad de semana?</div>
+      <div class="options">
+        <button onclick="saveAnswer(2, 'Lunes o martes')">Lunes o martes</button>
+        <button onclick="saveAnswer(2, 'Miércoles o jueves')">Miércoles o jueves</button>
+        <button onclick="saveAnswer(2, 'Viernes o sábado')">Viernes o sábado</button>
+        <button onclick="saveAnswer(2, 'Domingo')">Domingo</button>
+      </div>
+    </div>
+
+    <!-- Pregunta 3 -->
+    <div class="question-box" data-question="3" data-correct="14">
+      <div class="question">Si empieza desde el número 20 y cuenta hacia atrás de 2 en 2, ¿qué número sigue después de 16?</div>
+      <div class="options">
+        <button onclick="saveAnswer(3, '15')">15</button>
+        <button onclick="saveAnswer(3, '14')">14</button>
+        <button onclick="saveAnswer(3, '13')">13</button>
+        <button onclick="saveAnswer(3, '12')">12</button>
+      </div>
+    </div>
+
+    <!-- Pregunta 4 -->
+    <div class="question-box" data-question="4" data-correct="Octubre - Diciembre">
+      <div class="question">¿En qué trimestre estamos si el mes es noviembre?</div>
+      <div class="options">
+        <button onclick="saveAnswer(4, 'Enero - Marzo')">Enero - Marzo</button>
+        <button onclick="saveAnswer(4, 'Abril - Junio')">Abril - Junio</button>
+        <button onclick="saveAnswer(4, 'Julio - Septiembre')">Julio - Septiembre</button>
+        <button onclick="saveAnswer(4, 'Octubre - Diciembre')">Octubre - Diciembre</button>
+      </div>
+    </div>
+
+    <!-- Pregunta 5 -->
+    <div class="question-box" data-question="5" data-correct="En un hospital">
+      <div class="question">¿Dónde se encuentra si está recibiendo atención médica?</div>
+      <div class="options">
+        <button onclick="saveAnswer(5, 'En mi casa')">En mi casa</button>
+        <button onclick="saveAnswer(5, 'En un hospital')">En un hospital</button>
+        <button onclick="saveAnswer(5, 'En la calle')">En la calle</button>
+        <button onclick="saveAnswer(5, 'No lo sé')">No lo sé</button>
+      </div>
+    </div>
+
+    <!-- Botón para mostrar resultados -->
+    <div class="result-box">
+      <button onclick="showResults()">Finalizar y ver respuestas</button>
+      <div id="results"></div>
+    </div>
+  </div>
+
+  <script src="evaluacion.js"></script>
+</body>
+</html>
