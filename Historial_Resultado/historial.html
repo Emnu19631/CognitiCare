@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CognitiCare - Historial</title>
+  <link rel="stylesheet" href="historial.css">
+  <link rel="stylesheet" href="../Pantalla_principal/header.css"> <!-- estilos del header -->
+</head>
+<body>
+<div class="container_superior">
+        <ul class="top">
+            <img src="../Imagenes/corazon.png" class="corazon-box" alt="Corazón" width="50" height="50">
+            <li><a href="#">CogniCare</a></li>
+            <li><a href="../Pantalla_principal/pantalla_prin.html">Inicio</a></li>
+            <li><a href="#">Chequeo</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Novedades</a></li>
+            <li><a href="#">Contactos</a></li>
+            <img src="../Imagenes/Abuelas.webp" class="illustration" alt="Abuelas">
+        </ul>
+    </div>
+  <div id="header"></div>
+
+  <!-- Contenedor principal centrado -->
+  <div class="container">
+    <div class="card">
+      <div class="card-header">Octubre</div>
+
+      <div class="card-content">
+        <!-- Gráfico -->
+        <div class="grafico">
+          <canvas id="lineChart"></canvas>
+        </div>
+
+        <!-- Resultados -->
+        <div class="resultados">
+          <h3>Resultados del mes:</h3>
+          <p>Porcentaje de aciertos en cuestionario: <span class="badge green">65%</span></p>
+          <p>Porcentaje de aciertos en los juegos de memoria: <span class="badge green">80%</span></p>
+          <p>Días de uso continuo: <span class="badge">15 días</span></p>
+          <p>Pérdida de memoria: <span class="badge green">5%</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="historial.js"></script>
+  <script src="../Pantalla_principal/loadHeader.js"></script>
+</body>
+</html>
